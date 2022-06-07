@@ -28,7 +28,6 @@ body {
     text-decoration: none;
     background: #FFFFFF;
     color: var(--primary-text-color);
-    width: 1600px;
     display: block;
 }
 
@@ -44,6 +43,8 @@ body {
 
 .header {
     border: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .list {
@@ -51,6 +52,7 @@ body {
 }
 
 .logo{
+    padding: 24px 0px 25px 0px;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -59,10 +61,9 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color)
+
 }
 .header-logo{
-    padding-top: 24px;
-    padding-bottom: 25px;
     margin-right: 93px;
 
 }
@@ -87,13 +88,22 @@ body {
 .header-list .header-link.corrent{
     color: var(--accent-color);
 }
+.header-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .header-list{
     display: flex;
+    
 }
 
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
+/* .header-item{
+    padding-top: 32px;
+    padding-bottom: 32px;
+} */
 
 .header-connection{
     display: flex;
@@ -125,18 +135,23 @@ body {
 
 .header-item-mail{
     margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-item-tel{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /* --------------------------------hero-------------------------------- */
 
 .hero{
     background-color: #2F303A;
-    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.hero-title{
-    padding-top: 200px;
-}
 
 .hero-title{
     max-width: 696px;
@@ -173,16 +188,16 @@ body {
     margin-top: 30px;
     display: block;
     padding: 10px 32px;
+    border: none;
 }
 
-.button-div{
-    padding-bottom: 200px;
-}
+
 
 /* --------------------------------benefits-------------------------------- */
 
-.benefits {
-    margin-bottom: 94px;
+.benefits{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .benefits-list {
@@ -204,6 +219,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-bottom: 10px;
+    
 }
 .benefits-text {
     font-weight: 400;
@@ -211,13 +227,14 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    
 }
 
 
 /* ------------------------------------about----------------------------- */
 
 .about {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .about-list{
     display: flex;
@@ -228,9 +245,7 @@ body {
 }
 
 .personal {
-    padding-top: 94px;
-    margin-bottom: 0;
-    margin-top: 0;
+
 }
 
 .section-subtitle {
@@ -260,8 +275,7 @@ body {
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    
-    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .team{
@@ -271,6 +285,7 @@ body {
     left: 0px;
     top: 1449px; */
     background: #F5F4FA;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .team-item{
@@ -291,7 +306,12 @@ body {
     color: var(--title-text-color);
     
 }
+/* --------------------------------------footer----------------------------- */
 
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .footer-span {
     color: var(--optional-white);
 }
@@ -302,7 +322,6 @@ body {
 
 .footer-logo{
     display: block;
-    padding-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -326,11 +345,10 @@ body {
 .addres-mail{
     margin-bottom: 9px;
 }
-.address-list{
-    padding-bottom: 60px;
+
+.address-item:not(:last-child){
+    margin-bottom: 9px;
 }
-
-
 
 .address-list a:hover,
 .address-list a:focus {
@@ -344,20 +362,21 @@ body {
 /* --------------------------------portfolio-------------------------------- */
 
 
-
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .button-list{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 
 .button-item:not(:last-child){
     margin-right: 8px;
 }
 
-.button-item{
-    margin-top: 94px;
-}
 
 .button-text{
     background: #F5F4FA;
@@ -369,12 +388,12 @@ body {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    padding: 6px 22px;
+    border: none;
 }
 
 .portfolio-div{
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-top: 20px;
+    padding: 20px 24px;
     border: 1px solid #ECECEC;
 }
 
@@ -387,6 +406,12 @@ body {
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-subtitle{
@@ -412,11 +437,9 @@ body {
 .portfolio-item:not(:nth-child(3n + 3)){
     margin-right: 30px;
 }
-.portfolio-item:last-child {
-    margin-bottom: 94px;
-}
 
 .portfolio-link{
+    display: block max;
     text-decoration: none;
 
 }
