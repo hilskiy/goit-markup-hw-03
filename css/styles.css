@@ -43,8 +43,8 @@ body {
 
 .header {
     border: 1px solid #ECECEC;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    /* padding-top: 24px;
+    padding-bottom: 25px; */
 }
 
 .list {
@@ -74,6 +74,7 @@ body {
 .header-list .header-link{
     text-decoration: none;
     font-style: normal;
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -122,6 +123,7 @@ body {
 
 .header-connection a{
     text-decoration: none;
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -242,10 +244,6 @@ body {
 
 .about-item:not(:last-child){
     margin-right: 30px;
-}
-
-.personal {
-
 }
 
 .section-subtitle {
@@ -420,7 +418,7 @@ img {
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    pb4
+    margin-bottom: 4px;
 }
 
 .portfolio-text{
